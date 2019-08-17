@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#wrapper .left-side {
+  background: linear-gradient(
+                     rgba(20,20,20, .7), 
+                     rgba(20,20,20, -13.5)),
+                     url('https://ae01.alicdn.com/kf/HTB10HoLXDnI8KJjSszbq6z4KFXak/Thin-Art-fabric-photography-backdrops-photo-studio-photographic-background-for-children-Outdoor-desert-dusk-sunset-XT.jpg_640x640.jpg');
+  /* background: url('https://i1.wp.com/www.exportaz.org/wp-content/uploads/2017/11/Tucson-Arizona-sunset-flaming-sky-desert-landscape-with-Cactus-Desktop-HD-Wallpapers-for-mobile-phones-and-computer-3840x2400.jpg?ssl=1'); */
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#wrapper .left-side .bg-img {
+  background: url('https://apicdn.forddirectservices.com/inventory/1FTFW1RG4JFC42271/images/4?token=Hzmi2GJzlPYhGnMLQO0IAw81Dwmrq2dzmv1LSFrY4Wu6NL-x6QT0Rk-d2Bq87tOPXURpGSVKoP39V0CEa1dlI0fI5g8z9Ntps54BPYqPBxHkuZJpIBVV-qOjAIr47nYoIc2E1roomCZd0nvDne53zQU5bXkW67JH6d2WJ1pwf7mwRR_0-x6s7BZCMl5Hl7Lvm0xCmdxLM7q4pvKBZmHYSTrD0lUVwNBuB2T-RmyBW29laukF8Y_5hvOc0JaNlQODJB3l1tKgl8HrdAIgjlytNhCW8cacRj59GGhRo-J0uRgjJtml9ySjrJTKvZ91dDufKWED0qLWmF5iHtrmhq-K-A');
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  right: -100px;
+  bottom: 5px;
+}
+
+#wrapper .left-side h1 {
+  display: inline-block;
+  margin: 25px 30px;
+  padding: 0 10px;
+  border: 5px solid white;
+  color: white;
+  font-weight: 700;
+}
+
+#wrapper .left-side nav {
+  display: inline-block;
+  float: right;
+  margin: 25px 30px;
+  padding-top: 8px;
+  width: 520px;
+}
+
+#wrapper .left-side nav a {
+  text-decoration: none;
+  color: rgb(251, 251, 251);
+  margin-right: 60px;
+  font-size: 1rem;
+}
+
+#wrapper .left-side nav a:hover {
+  color: rgb(10, 49, 243);
+}
+
+/* right side */
+
+#wrapper .right-side .top-search {
+  width: 400px;
+  display: inline-block;
+  margin: 25px 30px 30px 275px;
+  text-align: center;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-left: none;
+  /* border: none; */
+  outline: none;
+  font-size: 1.5rem;
+  padding-bottom: 3px;
+}
+
+#wrapper .right-side input[type="search"]:focus {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #1b1b1b;
+}
+
+#wrapper .right-side .fas {
+  /* float: right; */
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#wrapper .right-side .form-area {
+  margin: 0 auto;
+  width: 236px;
+  text-align: center;
+  padding-top: 65px;
+}
+
+#wrapper .right-side .form-area h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+}
+
+#wrapper .right-side .form-area p {
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-top: 20px;
+  text-align: left;
+  margin-bottom: 35px;
+  line-height: 20px;
+}
+
+#wrapper .right-side .form-area .enter-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#wrapper .right-side .form-area .enter-type a {
+  text-decoration: none;
+  color: #030303;
+  font-weight: 600;
+  /* margin-bottom: 40px; */
+  margin: 20px auto 15px auto;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#wrapper .right-side .form-area .enter-type .btm-border {
+  border-bottom: 2px solid black;
+  width: 18px;
+  padding-bottom: 10px;
+}
+
+#wrapper .right-side .form-area .form-inputs {
+  text-align: left;
+  /* height: 300px; */
+}
+
+#wrapper .right-side .form-area .form-inputs .email {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#wrapper .right-side .form-area .form-inputs .pw {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#wrapper .right-side .form-area .form-inputs input {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  border-left: none;
+  outline: none;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#wrapper .right-side .form-area .form-inputs .btm-in {
+  margin-bottom: 30px;
+}
+
+#wrapper .right-side .form-area button {
+  background: #000;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 15px 100px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+#wrapper .right-side .form-area a {
+  color: #1b1b1b;
+  font-size: 0.8rem;
+}
